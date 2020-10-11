@@ -10,7 +10,14 @@ import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined"
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle"
 
 
-import {Avator, IconButton} from "@material-ui/icons"
+import {Avatar, IconButton} from "@material-ui/core"
+import AddIcon from "@material-ui/icons/Add"
+import ForumIcon from "@material-ui/icons/Forum"
+import NotificationsActivateIcon from "@material-ui/icons/NotificationsActive"
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
+
+import "./Header.css"
+
 
 // import {Navbar, Nav} from "react-bootstrap";
 
@@ -18,7 +25,7 @@ import {Avator, IconButton} from "@material-ui/icons"
 const Header = () => {
   return (
     <div className="header">
-      <div className="header_left">
+      <div className="header__left">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg"
           alt="facebook-logo"/>
       </div>
@@ -27,7 +34,7 @@ const Header = () => {
         <input placeholder="search my face" type="text"/>
       </div>
       <div className= "header__center">
-        <div className="header__option header__option--activate">
+        <div className="header__option header__option--active">
           <HomeIcon fontsize ="large"/>
         </div>
         <div className="header__option">
@@ -46,8 +53,24 @@ const Header = () => {
 
       <div className="header__right">
         <div className="header__info">
-          <Avator fontsize="large"/>
+          <Avatar fontsize="large"/>
+          <h4>Nii Darku</h4>
         </div>
+        <IconButton>
+          <AddIcon/>
+        </IconButton>
+        
+        <IconButton>
+          <ForumIcon/>
+        </IconButton>
+
+        <IconButton>
+          <NotificationsActivateIcon/>
+        </IconButton>
+
+        <IconButton>
+          <ExpandMoreIcon/>
+        </IconButton>
       </div>
     </div>
     )
