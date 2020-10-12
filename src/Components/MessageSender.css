@@ -43,3 +43,16 @@
 .messageSender__input{
     flex: 1;
 }
+
+.messageSender__bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.messageSender__option{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+}
